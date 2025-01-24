@@ -26,7 +26,7 @@ const painel = document.querySelector('.calc');
 const printresult = document.querySelector('.result');
 const operation = document.querySelectorAll('.operation-botton');
 const equals = document.querySelector('.equals-botton');
-
+const clear = document.querySelector('.clear');
 
 let firstNumber = '';
 let secondNumber = '';
@@ -81,6 +81,14 @@ equals.addEventListener('click', () =>{
 
 })
 
+clear.addEventListener('click', () =>{
+    firstNumber = '';
+    secondNumber = '';
+    isSecondNumber = '';
+    operator = '';
+    painel.innerHTML = '';
+    printresult.innerHTML = '0';
+})
 
 
     

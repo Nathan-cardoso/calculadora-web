@@ -71,8 +71,61 @@ body{
     justify-content: center;
 }
 
+.container .delete{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0px 10px 10px 15px;
+}
 
-.container .numbers{
+.container .delete .clear{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--color04);
+    color: red;
+    height: 50px;
+    width: 50px;
+    border-radius: 20%;
+    margin: auto;
+    font-weight: bolder;
+    font-size: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.container .delete .clear:hover,
+.container .delete .deleteOneNumber:hover{
+    background-color: #3d3d3d9f;
+}
+
+.container .delete .deleteOneNumber{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--color04);
+    color: red;
+    height: 50px;
+    width: 50px;
+    border-radius: 20%;
+    margin: auto;
+    font-weight: bolder;
+    font-size: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.container .delete .deleteOneNumber img{
+    width: 90%;
+    height: 90%;
+    padding: 5px;
+    justify-content: center;
+}
+
+
+.content .numbers{
     display: flex;
     justify-content: space-around;
     gap: 15px;
@@ -82,7 +135,7 @@ body{
 }
 
 
-.container .numbers .number-botton{
+.content .numbers .number-botton{
     display: flex;
     align-items: center;
     text-align: center;
@@ -98,12 +151,12 @@ body{
     cursor: pointer;
 }
 
-.container .numbers .number-botton:hover{
+.content .numbers .number-botton:hover{
     background-color: #70707071;
 }
 
 
-.container .numbers .equals-botton{
+.content .numbers .equals-botton{
     display: flex;
     align-items: center;
     text-align: center;
@@ -118,19 +171,19 @@ body{
     cursor: pointer;
 }
 
-.container .numbers .equals-botton:hover{
+.content .numbers .equals-botton:hover{
     background-color: #f244059c;
 }
 
 
-.container .operations{
+.content .operations{
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
 
-.container .operations .operation-botton{
+.content .operations .operation-botton{
     display: flex;
     align-items: center;
     text-align: center;
@@ -146,7 +199,7 @@ body{
     cursor: pointer;
 }
 
-.container .operations .operation-botton:hover{
+.content .operations .operation-botton:hover{
     background-color: #fa81089d;
 }
 
