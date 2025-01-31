@@ -36,9 +36,15 @@ let isSecondNumber = false;
 
 numbers.forEach((button) => {
     button.addEventListener('click', () =>{
+
+        value = button.textContent;
+
+        if (value === "." && ((isSecondNumber && secondNumber.includes(".")) || (!isSecondNumber && firstNumber.includes(".")))) {
+            return; 
+        }
         if(isSecondNumber){
             secondNumber += button.textContent;
-            painel.innerHTML = secondNumber;
+            painel.innerHTML = firstNumber + " " + operator + " " +secondNumber;
         }else{
             firstNumber += button.textContent;
             painel.innerHTML = firstNumber;
@@ -49,8 +55,8 @@ numbers.forEach((button) => {
 operation.forEach((bottonOperator) =>{
     bottonOperator.addEventListener('click', () =>{
         operator = bottonOperator.innerHTML;
-        painel.innerHTML = '';
         isSecondNumber = true;
+        painel.innerHTML = firstNumber + " " + operator;
     })
 })
 
