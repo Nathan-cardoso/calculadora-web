@@ -203,6 +203,35 @@ body{
     background-color: #fa81089d;
 }
 
+@media (max-width: 450px){
+
+
+
+    .content .numbers .number-botton,
+    .content .numbers .equals-botton,
+    .content .operations .operation-botton,
+    .container .delete .deleteOneNumber,
+    .container .delete .clear{
+        height: 35px;
+        width: 35px;
+        border-radius: 30%;
+    }
+}
+
+@media (max-width: 340px) {
+
+    .content .numbers .number-botton,
+    .content .numbers .equals-botton,
+    .content .operations .operation-botton,
+    .container .delete .deleteOneNumber,
+    .container .delete .clear {
+        height: 30px;
+        width: 30px;
+        font-size: 14px;
+    }
+}
+
+
 
 
 
