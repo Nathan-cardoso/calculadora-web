@@ -100,7 +100,6 @@ operation.forEach((bottonOperator) =>{
 
 equals.addEventListener('click', () =>{
 
-    
     let result = calculo();
 
     painel.innerHTML = '';
